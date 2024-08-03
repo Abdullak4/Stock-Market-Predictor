@@ -20,7 +20,7 @@ def prediction(stock, n_days):
 
     # load the data
 
-    df = yf.download(stock, period='60d')
+    df = yf.download(stock, period='6mo')
     df.reset_index(inplace=True)
     df['Day'] = df.index
 
